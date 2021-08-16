@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/planning-dun-frosts",
+      "handler": "planning-dun-frost.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planning-dun-frosts/count",
+      "handler": "planning-dun-frost.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planning-dun-frosts/:id",
+      "handler": "planning-dun-frost.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/planning-dun-frosts",
+      "handler": "planning-dun-frost.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/planning-dun-frosts/:id",
+      "handler": "planning-dun-frost.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/planning-dun-frosts/:id",
+      "handler": "planning-dun-frost.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planning_frigo_a25s",
+  "info": {
+    "name": "PlanningFrigoA25",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

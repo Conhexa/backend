@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/planning-dun-freshes",
+      "handler": "planning-dun-fresh.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planning-dun-freshes/count",
+      "handler": "planning-dun-fresh.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planning-dun-freshes/:id",
+      "handler": "planning-dun-fresh.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/planning-dun-freshes",
+      "handler": "planning-dun-fresh.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/planning-dun-freshes/:id",
+      "handler": "planning-dun-fresh.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/planning-dun-freshes/:id",
+      "handler": "planning-dun-fresh.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/planning-frigo-a-25-s",
+      "handler": "planning-frigo-a25.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planning-frigo-a-25-s/count",
+      "handler": "planning-frigo-a25.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/planning-frigo-a-25-s/:id",
+      "handler": "planning-frigo-a25.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/planning-frigo-a-25-s",
+      "handler": "planning-frigo-a25.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/planning-frigo-a-25-s/:id",
+      "handler": "planning-frigo-a25.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/planning-frigo-a-25-s/:id",
+      "handler": "planning-frigo-a25.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

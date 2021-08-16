@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/questions-and-answers",
+      "handler": "questions-and-answers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/questions-and-answers/count",
+      "handler": "questions-and-answers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/questions-and-answers/:id",
+      "handler": "questions-and-answers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/questions-and-answers",
+      "handler": "questions-and-answers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/questions-and-answers/:id",
+      "handler": "questions-and-answers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/questions-and-answers/:id",
+      "handler": "questions-and-answers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

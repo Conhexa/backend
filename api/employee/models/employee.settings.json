@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "job": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 150
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "lastName",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qaa",
+  "info": {
+    "name": "QuestionsAndAnswers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 750
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "question"
+    }
+  }
+}

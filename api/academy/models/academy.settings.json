@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academies",
+  "info": {
+    "name": "Academy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "academy_category": {
+      "via": "academies",
+      "model": "academy-category"
+    }
+  }
+}

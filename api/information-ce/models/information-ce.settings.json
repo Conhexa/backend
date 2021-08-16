@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "information_ces",
+  "info": {
+    "name": "InformationCE",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    }
+  }
+}
